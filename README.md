@@ -77,3 +77,17 @@ You can then publish the computed transformation with the following command:
 ```bash
 ros2 launch easy_handeye2 publish_franka_handeye.launch.py
 ```
+
+#### Estimating the transformation from marker to probe
+- Launch the calibrated pose publisher
+```
+ros2 launch easy_handeye2 publish_franka_handeye.launch.py
+```
+- Publish the static transformation from link8 to the probe tip
+```
+ros2 run tf2_ros static_transform_publisher   --x 0 --y 0 --z 0.30   --roll 0 --pitch 0 --yaw 0   --frame-id panda_link8   --child-frame-id probe
+```
+- Retrieve the marker to probe transform
+```
+ros2 run tf2_ros tf2_echo marker probe
+```
