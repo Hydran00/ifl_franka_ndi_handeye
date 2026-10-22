@@ -1,0 +1,13 @@
+[submodule "franka_arm_ros2"]
+	path = franka_arm_ros2
+	url = https://github.com/tstoyanov/franka_arm_ros2
+[submodule "franka_legacy_lib/libfranka"]
+	path = franka_legacy_lib/libfranka
+	url = https://github.com/frankaemika/libfranka.git
+	branch = 0.9.2
+[submodule "calibration_ws/src/easy_handeye2"]
+	path = calibration_ws/src/easy_handeye2
+	url = git@github.com:Hydran00/easy_handeye2.git
+[submodule "calibration_ws/src/ndisys_ros2"]
+	path = calibration_ws/src/ndisys_ros2
+	url = git@github.com:Hydran00/ndisys_ros2.git
